@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Task;
+use Illuminate\Http\Request;
