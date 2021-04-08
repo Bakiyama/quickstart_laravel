@@ -18,7 +18,8 @@ use Illuminate\Http\Request;
  * タスク一覧表示
 */
 Route::get('/', function () {
-  //
+  //ビューを返す
+  return view('tasks');
 });
 
 /**
