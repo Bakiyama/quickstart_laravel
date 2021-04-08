@@ -21,3 +21,10 @@ Route::get('/', function () {
   //
 });
 
+/**
+ * 新タスク追加
+ */
+Route::post('/task', function (Request $request) {
+  // 「Request $request」の記述がPOSTデータを取得する。上のuse Illuminate\Http\Request;がないとエラーが起きる
+}); 
+
