@@ -13,3 +13,11 @@
 
 use App\Task;
 use Illuminate\Http\Request;
+
+/** 
+ * タスク一覧表示
+*/
+Route::get('/', function () {
+  //
+});
+
