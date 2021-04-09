@@ -9,7 +9,7 @@
 
         <div class="panel-body">
           <!-- Display Validates Errors -->
-          @include('common.errrors')
+          @include('common.errors')
 
           <!-- New Task Form -->
           <form action="{{ url('task') }}" method="POST" class="form-horizontal">
