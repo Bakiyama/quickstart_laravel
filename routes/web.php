@@ -27,6 +27,15 @@ Route::get('/', function () {
  */
 Route::post('/task', function (Request $request) {
   // 「Request $request」の記述がPOSTデータを取得する。上のuse Illuminate\Http\Request;がないとエラーが起きる
+  $validator = Validator::make($request->all(), [
+    'name' => 'required|max:255',
+  ]);
+
+  if ($validator->fails()) {
+    return redirect('/')
+    ->withInput()
+    ->withErrors('$validator')
+  }
 }); 
 
 /**
