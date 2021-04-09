@@ -9,4 +9,21 @@
   <!-- Style -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" >
 </head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+    <!-- navbar -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{{ url('/') }}">
+        Task List
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  @yield('content')
+
+  <!-- JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
 </html>
