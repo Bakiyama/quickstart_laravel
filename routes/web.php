@@ -45,7 +45,7 @@ Route::post('/task', function (Request $request) {
     $task->name = $request->name;
     $task->save();
 
-    // return redirect('/');
+    return redirect('/');
 }); 
 
 /**
