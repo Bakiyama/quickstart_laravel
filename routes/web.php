@@ -31,7 +31,7 @@ Route::get('/', function () {
  */
 Route::post('/task', function (Request $request) {
     // 「Request $request」の記述がPOSTデータを取得する。上のuse Illuminate\Http\Request;がないとエラーが起きる
-    $validator = Validator::make($request->all(), [
+    $validator = Validator::make($request->all(), [  //Validator⋯Laravelの標準クラス。
     'name' => 'required|max:255',
     ]);
 
