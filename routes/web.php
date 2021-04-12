@@ -53,4 +53,7 @@ Route::post('/task', function (Request $request) {
  */
 Route::delete('/task/{task}', function (Task $task) {
     //{task}という処理で消すタスクを特定し、function (Task $task)に送る。上のuse App\Task;がないとエラーが起こる
+    $task->delete();
+
+    return redirect('/');
 });
